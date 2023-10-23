@@ -2,13 +2,10 @@
   "name": "wedding-invitation",
   "version": "0.0.0",
   "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "generate": "node index.js",
-    "test": "snyk test && nyc mocha --recursive test",
-    "start": "node ./bin/www | \"node_modules/.bin/bunyan\"",
-    "dev": "nodemon ./bin/www | \"node_modules/.bin/bunyan\"",
-    "start-win": "TITLE Wedding Invitation  &&  node ./bin/www | \"node_modules/.bin/bunyan\"",
-    "heroku-start": "node ./bin/www"
+    "start": "node index.js"
   },
   "engines": {
     "node": "18.3.0"
@@ -26,7 +23,7 @@
     "debug": "~2.6.3",
     "dotenv": "^8.2.0",
     "ejs": "^2.7.1",
-    "express": "^4.16.0",
+    "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
     "express-recaptcha": "^5.0.2",
     "express-session": "^1.17.1",
