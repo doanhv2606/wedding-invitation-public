@@ -1,10 +1,6 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 8081;
-
 const getQuote = async () => {
   try {
     const { data } = await axios.get("https://api.goprogram.ai/inspiration");
@@ -21,7 +17,6 @@ const getQuote = async () => {
     console.error(err.message);
     return {};
   }
-  
 };
 
 const generate = async () => {
@@ -40,7 +35,6 @@ const generate = async () => {
   }
 
   fs.appendFileSync("README.md", `⚡ Quote: \n**${quote}**\n\n${author}`);
-  
 };
 
 generate();
