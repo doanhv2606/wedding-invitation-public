@@ -398,7 +398,14 @@
 
 .card-welcome-text {
     font-family: wedding-font-vni;
-    font-size: 60px
+    font-size: 60px; /* Điều chỉnh kích thước cho văn bản "Wedding" */
+    margin-top: -25px; /* Điều chỉnh khoảng cách từ trên xuống */
+}
+
+.card-welcome-date {
+    font-size: 15px; /* Điều chỉnh kích thước cho thời gian */
+    margin-top: -20px; /* Điều chỉnh khoảng cách từ trên xuống */
+    color: red;
 }
 
 .card-invite {

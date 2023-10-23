@@ -33,7 +33,7 @@
             "month": "12",
             "year": "2023"
           },
-          "day_of_week": "8",
+          "day_of_week": "7",
           "solar": {
             "day": "14",
             "month": "11",
@@ -95,7 +95,7 @@
           }
         },
         "time": {
-          "hour": "10",
+          "hour": "16",
           "minute": "00"
         }
       },

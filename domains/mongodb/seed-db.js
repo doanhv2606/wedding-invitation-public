@@ -25,7 +25,7 @@ const SeedDB = {
             month: "12",
             year: "2023"
           },
-          day_of_week: "8",
+          day_of_week: "7",
           solar: {
             day: "13",
             month: "11",
@@ -87,7 +87,7 @@ const SeedDB = {
           }
         },
         time: {
-          hour: "10",
+          hour: "16",
           minute: "00"
         }
       },
