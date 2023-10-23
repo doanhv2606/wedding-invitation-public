@@ -65,8 +65,8 @@ const SeedDB = {
     female: {
       name: "Nguyễn Thị Thúy Linh",
       parent: {
-        father: "Nguyễn Văn Thịnh",
-        mother: "Bùi Thị Biên"
+        father: "Nguyễn Đức Thịnh",
+        mother: "Bùi Thị Thúy Biên"
       },
       location: {
         text: "Đỗ Xuyên - Thanh Ba - Phú Thọ",
