@@ -15,7 +15,7 @@ const SeedDB = {
         mother: "Phạm Thị Thủy"
       },
       location: {
-        text: "Trực Đại - Trực Ninh - Nam Định",
+        text: "Minh Quang - Trực Đại - Trực Ninh - Nam Định",
         map: "https://maps.app.goo.gl/x2aG3JgsmEV7Eqnt7"
       },
       time_start: {
