@@ -525,11 +525,14 @@
     left: 0;
     display: inline-grid;
     z-index: 99999;
+    border: none; /* Bỏ đường viền */
 }
 
 .share-buttons .share-button {
     float: left;
     margin-top: 15px;
+    transition: width 175ms ease; /* Thêm hiệu ứng transition */
+    border: none; /* Bỏ đường viền */
 }
 
 .share-buttons .share-button:first-child {
@@ -539,12 +542,14 @@
 .share-buttons .share-button:after {
     clear: both;
     display: table;
+    border: none; /* Bỏ đường viền */
 }
 
 .share-button {
     display: block;
     position: relative;
     height: 30px;
+    border: none; /* Bỏ đường viền */
 }
 
 .share-button:hover {
@@ -555,52 +560,52 @@
     box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.share-button:hover .share-button-secondary-content {
-    transform: translate3d(0, 0, 0);
-}
-
 .share-button-primary {
     position: absolute;
-    background: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: 40px; /* Tăng kích thước của button */
+    height: 40px; /* Tăng kích thước của button */
+    border-radius: 0; /* Bỏ tròn nền chứa text */
     left: 0;
     top: 50%;
-    margin-top: -15px;
+    margin-top: -20px;
+    transition: width 175ms ease; /* Thêm hiệu ứng transition */
+    border: none; /* Bỏ đường viền */
 }
 
 .share-button-icon {
     display: block;
-    color: #242424;
+    color: #210cc5;
     position: absolute;
     width: 30px;
-    line-height: 30px;
+    line-height: 40px; /* Canh giữa theo chiều cao mới của button */
     font-size: 16px;
     margin-top: 1px;
+    border-radius: 0; /* Bỏ tròn nền chứa text */
+    border: none; /* Bỏ đường viền */
 }
 
 .share-button-secondary {
     overflow: hidden;
     margin-left: 15px;
     height: 30px;
+    border-radius: 0; /* Bỏ tròn nền chứa text */
+    border: none; /* Bỏ đường viền */
 }
 
 .share-button-secondary-content {
     font-family: sans-serif;
-    font-size: 0.75em;
-    background: #fff;
+    font-size: 1em;
     display: block;
-    height: 30px;
+    height: 40px; /* Tăng chiều cao của nền chứa text */
     text-align: left;
     padding-left: 24px;
     padding-right: 18px;
-    line-height: 30px;
-    color: #242424;
-    border-radius: 0 15px 15px 0;
-    transform: translate3d(-100%, 0, 0);
-    transition: transform 175ms ease;
+    line-height: 40px; /* Canh giữa theo chiều cao mới của button */
+    color: #210cc5;
+    border-radius: 0; /* Bỏ tròn nền chứa text */
+    border: none; /* Bỏ đường viền */
 }
+
 
 .card-body.copy {
     display: flex;
