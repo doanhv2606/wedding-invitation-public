@@ -69,7 +69,7 @@ const SeedDB = {
         mother: "Bùi Thị Thúy Biên"
       },
       location: {
-        text: "Đỗ Xuyên - Thanh Ba - Phú Thọ",
+        text: "Khu 4 - Đỗ Xuyên - Thanh Ba - Phú Thọ",
         map: "https://maps.app.goo.gl/psYRjSWdyCZdhZbT6"
       },
       time_start: {
