@@ -25,6 +25,7 @@
                 <th scope="col">Phone</th>
                 <th scope="col">Status</th>
                 <th scope="col">Time</th>
+                <th scope="col">Address</th>
                 <th scope="col">Message</th>
                 <th  class="text-center">Action</th>
               </tr>
@@ -46,6 +47,14 @@
                   <% } else { %>
                   <td>Không Tham gia</td>
                   <% } %>
+
+                  <% if(invocations[i].address == 1){ %>
+                    <td>PVI Tower</td>
+                    <%  } else if(invocations[i].address == -1){ %>
+                    <td>Royal City</td>
+                    <% } else { %>
+                    <td>Symphony Tower</td>
+                    <% } %>
                 <th style="width: 150px;">
                   <textarea row="1" class="form-control" disabled > <%= invocations[i].time %></textarea>  
                 <th>
