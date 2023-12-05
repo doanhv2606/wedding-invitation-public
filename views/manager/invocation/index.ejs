@@ -25,8 +25,6 @@
                 <th scope="col">Phone</th>
                 <th scope="col">Status</th>
                 <th scope="col">Time</th>
-                <th scope="col">Vehicles</th>
-                <th scope="col">Location</th>
                 <th scope="col">Message</th>
                 <th  class="text-center">Action</th>
               </tr>
@@ -42,37 +40,27 @@
                 <th><%= invocations[i].phone %></th>
                 
                 <% if(invocations[i].status == 1){ %>
-                  <td>Tham gia</td>
-                  <%  } else if(invocations[i].status == -1){ %>
+                  <td>Có đến và đi xe nhà Trai đón ở PVI Tower - Cầu Giấy</td>
+                <% } else if(invocations[i].status == 2){ %>
+                  <td>Có đến và đi xe nhà Trai đón ở Royal City</td>
+                <% } else if(invocations[i].status == 3){ %>
+                  <td>Có đến và đi xe nhà Trai đón ở Symphony Tower - Long Biên</td>
+                <% } else if(invocations[i].status == 4){ %>
+                  <td>Có đến và đi xe nhà Gái đón ở Ellipse Tower - Hà Đông</td>
+                <% } else if(invocations[i].status == 5){ %>
+                  <td>Có đến và tự đi xe cá nhân</td>
+                <% } else if(invocations[i].status == 6){ %>
+                  <td>Không thể tham dự</td>
+                <% } else { %>
                   <td>Không Tham gia</td>
-                  <% } else { %>
-                  <td>Không Tham gia</td>
-                  <% } %>
+                <% } %>
+                
 
 
                   <th style="width: 150px;">
                     <textarea row="1" class="form-control" disabled><%= invocations[i].time %></textarea>
                   </th>
 
-                  <th>
-                    <% if(invocations[i].vehicles == 1){ %>
-                        <textarea row="3" class="form-control" disabled>Đi xe gia chủ</textarea>
-                    <% } else if(invocations[i].vehicles == -1){ %>
-                        <textarea row="3" class="form-control" disabled>Tự đi xe</textarea>
-                    <% } else { %>
-                        <textarea row="3" class="form-control" disabled>Đi xe gia chủ</textarea>
-                    <% } %>
-                </th>
-
-                  <th>
-                    <% if(invocations[i].location == 1){ %>
-                        <textarea row="3" class="form-control" disabled>PVI Tower</textarea>
-                    <% } else if(invocations[i].location == -1){ %>
-                        <textarea row="3" class="form-control" disabled>Royal City</textarea>
-                    <% } else { %>
-                        <textarea row="3" class="form-control" disabled>Symphony Tower</textarea>
-                    <% } %>
-                </th>
                 <th>
                     <textarea row="3" class="form-control" disabled><%= invocations[i].message %></textarea>
                 </th>
