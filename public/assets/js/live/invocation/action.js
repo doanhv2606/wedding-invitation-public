@@ -5,6 +5,7 @@ function sendResponse() {
     message: $('#txtMessage').val(),
     phone: $('#txtPhone').val(),
     location: $('#slLocation').val(),
+    vehicles: $('#slVehicles').val(),
     status: $('#slStatus').val(),
   };
   notify.loading();
