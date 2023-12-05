@@ -4,7 +4,7 @@ function sendResponse() {
     inviteeId: $('#txtId').val(),
     message: $('#txtMessage').val(),
     phone: $('#txtPhone').val(),
-    address: $('#slAdress').val(),
+    location: $('#slLocation').val(),
     status: $('#slStatus').val(),
   };
   notify.loading();
