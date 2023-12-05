@@ -53,16 +53,18 @@
                   </th>
                   <th>
                     <% if(invocations[i].location == 1){ %>
-                      <td>PVI Tower</td>
+                        <textarea row="3" class="form-control" disabled>PVI Tower</textarea>
                     <% } else if(invocations[i].location == -1){ %>
-                      <td>Royal City</td>
+                        <textarea row="3" class="form-control" disabled>Royal City</textarea>
                     <% } else { %>
-                      <td>Symphony Tower</td>
+                        <textarea row="3" class="form-control" disabled>Symphony Tower</textarea>
                     <% } %>
-                    <textarea row="3" class="form-control" disabled><%= invocations[i].location %></textarea>
-                  </th>
+                </th>
+                <th>
+                    <textarea row="3" class="form-control" disabled><%= invocations[i].message %></textarea>
+                </th>
+                
 
-                  
                 <td  class="text-center">  <button type="button" class="btn btn-warning" onclick="del('<%= invocations[i]._id %>')">Delete</button></td>
               </tr>
               <% } %>
