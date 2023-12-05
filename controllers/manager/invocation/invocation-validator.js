@@ -15,5 +15,9 @@ exports.invocationValidator = [
     body('invocation.status').exists()
         .withMessage('Status a required')
         .isNumeric()
-        .withMessage('Status must be select') 
+        .withMessage('Status must be select'),
+    body('invocation.vehicles').exists()
+        .withMessage('Vehicles a required')
+        .isNumeric()
+        .withMessage('Vehicles must be select') 
 ]; 

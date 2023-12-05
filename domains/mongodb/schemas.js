@@ -30,6 +30,7 @@ const INVOCATION = new Schema({
     status: Number, //1. go , 0. pending, -1. cancel
     phone: String,
     location: Number,
+    vehicles: Number,
     message: String,
     inviteeId: String,
     time: { type: Date, default: Date.now},
